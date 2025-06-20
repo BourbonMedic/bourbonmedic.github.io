@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bourbon Medic Company</title>
+  <style>
+    :root {
+      --bg-color: #3e3a26;
+      --accent-color: #00bfa5;
+      --text-color: #f5f5f5;
+      --secondary-color: #cccccc;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+    }
+    header {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    img.logo {
+      max-width: 250px;
+      height: auto;
+      border-radius: 12px;
+    }
+    h1 {
+      margin-top: 1rem;
+      font-size: 2rem;
+      color: var(--accent-color);
+    }
+    section {
+      max-width: 700px;
+      margin: 2rem 0;
+      text-align: center;
+    }
+    h2 {
+      color: var(--accent-color);
+    }
+    .notify-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    input[type="email"] {
+      padding: 0.6rem;
+      border: none;
+      border-radius: 4px;
+      margin-bottom: 1rem;
+      width: 80%;
+      max-width: 400px;
+    }
+    button {
+      padding: 0.6rem 1.2rem;
+      border: none;
+      background-color: var(--accent-color);
+      color: var(--bg-color);
+      font-weight: bold;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #009e89;
+    }
+    footer {
+      font-size: 0.8rem;
+      color: var(--secondary-color);
+      margin-top: 3rem;
+      text-align: center;
+    }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+      section {
+        padding: 0 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Bourbon Medic Logo" class="logo">
+    <h1>Bourbon Medic Company</h1>
+  </header>
+
+  <section>
+    <h2>Coming Soon</h2>
+    <p>
+      Bourbon Medic Company is building the future of combat medic and EMS education.
+      We're creating powerful, practical training tools—from exam prep to immersive simulations—for both military and civilian medical providers.
+      Whether you're chasing your EFMB, preparing for TCCC, or just want to sharpen your skills, our mission is to support yours.
+    </p>
+  </section>
+
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I’m a U.S. Army combat medic with over a decade of experience in both military and civilian prehospital care.
+      I’m passionate about training medics using resources that actually reflect what happens in the field.
+      Bourbon Medic Co. was born out of the need for something better—smarter tools, mission-focused learning, and a community that helps medics get after it.
+    </p>
+  </section>
+
+  <section>
+    <h2>Notify Me When We Launch</h2>
+    <form class="notify-form" action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="email" name="email" placeholder="Enter your email" required>
+      <button type="submit">Notify Me</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Bourbon Medic Company. All rights reserved.
+  </footer>
+</body>
+</html>
